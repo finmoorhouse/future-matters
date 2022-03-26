@@ -1,0 +1,26 @@
+{
+  "name": "future-matters",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "eleventy --serve",
+    "test": "echo \"Error: no test specified.\" && exit 1",
+    "tailwind:process": "npx postcss src/style.css --o src/_includes/assets/css/global.css --watch",
+    "start": "concurrently \"npm run tailwind:process\" \"npm run serve\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.0"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.4",
+    "concurrently": "^7.0.0",
+    "cssnano": "^5.1.5",
+    "postcss": "^8.4.12",
+    "postcss-cli": "^9.1.0",
+    "tailwindcss": "^3.0.23"
+  }
+}
