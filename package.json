@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "rm -rf _site && eleventy && NODE_ENV=production postcss style.css > _site/style.css",
+    "build": "rm -rf _site && eleventy && NODE_ENV=production postcss src/style.css > _site/style.css",
     "test": "echo \"Error: no test specified.\" && exit 1",
     "serve": "npx eleventy --serve",
     "tailwind:process": "npx postcss src/style.css --o src/_includes/assets/css/global.css --watch",
