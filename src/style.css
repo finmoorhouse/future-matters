@@ -1,7 +1,21 @@
+/*
+Yes, this is rough and not in the spirit of Tailwind. I'm also new to Tailwind and trying to move fast...
+*/
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+main {
+  background: grey;
+}
+.main {
+  background: none;
+  background-image: linear-gradient(black, black),
+    url("http://prod-upp-image-read.ft.com/1169f542-47da-11e8-8ee8-cae73aab7ccb");
+  background-size: cover;
+  background-blend-mode: saturation;
+}
 a {
-    color: hotpink;
+  color: rgb(87, 198, 231);
 }
