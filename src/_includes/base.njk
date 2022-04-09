@@ -7,34 +7,32 @@
     <title>{{ title }}</title>
     <link rel="stylesheet" href="/global.css" />
   </head>
-  <body>
+  <body class="bg-gray-100">
     <main>
       <div
-        class="main min-h-screen bg-gray-50 py-6 flex flex-col justify-center relative overflow-hidden sm:py-12"
+        class="main min-h-screen pt-6 flex flex-col justify-center relative overflow-hidden sm:pt-12"
       >
-        <img
-          src="/img/beams.jpg"
-          alt=""
-          class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 max-w-none"
-          width="1308"
-        />
+        <div class="logo-image">
+          {% image "./src/images/fm-logo.jpg", "Future Matters logo" %}
+        </div>
         <div
-          class="absolute inset-0 bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]"
-        ></div>
-        <div
-          class="relative px-6 pt-10 pb-4 bg-white shadow-xl ring-1 ring-gray-900/5 sm:max-w-lg sm:mx-auto sm:rounded-lg sm:px-10"
+          class="relative px-6 -top-20 pt-10 pb-4 sm:mb-10 -mb-10 bg-white ring-1 ring-gray-900/5 sm:max-w-lg sm:mx-auto sm:rounded-lg sm:px-10 sm:top-0 sm:pt-5 sm:shadow-lg"
         >
+        <!-- can add -top-20  -->
           <div class="max-w-md mx-auto">
-            <h1 class="font-medium leading-tight text-5xl mt-0 mb-2 font-serif">
+            <!--<h1 class="font-medium leading-tight text-5xl mt-10 mb-2 font-serif">
               {{ title }}
-            </h1>
+            </h1>-->
             <div class="divide-y divide-gray-300/50">
-              <div class="py-8 text-base leading-7 space-y-6 text-gray-600">
+              <div class="sm:py-4 py-10 text-base leading-7 space-y-6 text-gray-600">
                 {{ content | safe }}
               </div>
             </div>
           </div>
         </div>
+        <p class="mx-auto mb-5 opacity-50 px-10">
+          Photo credit for the logo image belongs to Derek Parfit.
+        </p>
       </div>
     </main>
   </body>
