@@ -6,11 +6,13 @@ Yes, this is rough and not in the spirit of Tailwind. I'm also new to Tailwind a
 @tailwind components;
 @tailwind utilities;
 
-a {
-  @apply text-cyan-600 hover:text-cyan-800;
-}
-
-.logo-image img{
+.logo-image img {
   @apply rounded-lg mb-10 sm:max-w-xs max-w-[50%] mx-auto overflow-visible relative drop-shadow-lg z-10;
 }
 
+.main-content a {
+  @apply text-sky-600 hover:text-sky-800;
+}
+.main-content li > a {
+  @apply bg-sky-100 rounded-md py-2 px-2 hover:bg-sky-200 whitespace-nowrap;
+}
